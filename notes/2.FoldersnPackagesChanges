@@ -1,0 +1,31 @@
+Description:
+- Express: backend framework
+- Morgan: logging middlewares for backend
+- Helmet: Security for web (Needed more research on)
+- Compress: reduce file size when uploading to webs
+
+Syntax wise:
+- npm init: initialize existing / create new npm package
+- npm i express
+- npm i morgan --save-dev
+- npm i helmet --save-dev
+- npm i compression --save-dev
+- curl.exe http://localhost:3055
+- curl.exe http://localhost:3055 --include
+
+Folder created:
+- src: glueing things together
+- src/configs
+- src/controllers
+- src/modals
+- src/services
+- src/utils
+Files created:
+- .env
+- src/app.js
+- .gitignore (node_modules, .env)
+
+Notes:
+- flag --save is unnecessary because on node 5.0.0, dependencies
+are saved automatically
+https://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install

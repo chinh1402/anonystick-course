@@ -1,0 +1,42 @@
+Sources: https://www.youtube.com/watch?v=qpIfPitAIX0
+What we cover in this lesson: 
+Fleeting notes (raw notes): 
+- Khi vận chuyển dữ liệu (payload) quá nhiều đến mobile web,.... gây tốn băng thông. Phải sử dụng Compress
+Takeaways:
+1. WINDOW SPECIFIC: curl.exe instead of using curl
+2. --save-dev: saving in dev-dependencies, oppose to --save-production
+
+Important questions to ask yourself after:
+- With those files/folders that has been setup, which architecture
+are you using? Controllers Model Service (CMS), and it's a design pattern, not an architecture 
+
+- Why --save-dev?
+=> with --save-dev, packages are saved in dev-dependencies;
+    without --save-dev, packages are saved in both dev-dependencies and dependencies
+    the other option is --save-production
+    Why does this matter? 
+    Simple, npm run build (production) and npm run dev, build dependencies only cant be run in dev and vice versa
+    
+    In other people words: bình thường, khi chạy dự án, sẽ có 2 options, đó là chạy trên dev environment hoặc build (production) environment. Và tương ứng với nó là dependencies của dev và builds
+    Một ví dụ điển hình như NextJS, Khi chạy build, sẽ có tool cho sẵn để debug những component Image là phải điền alt tag, và
+    điền những ký tự đặc biệt như dấu cách (spacebar) thành %20..
+
+    Nghĩ "build" giống kiểu trước khi mình thực hiện build, thì có đoạn code của tester người ta test code của mình xem
+    có đạt tiêu chuẩn hay chưa
+
+    Câu hỏi tiếp theo được đặt ra: cách để chạy dev env / production env
+
+- Test compression: 1.4MB ~ 3.8kB first load, second load 822B
+
+- Why would second load file size be 822B? 
+    => As the website is loaded in for the first time, the browser will do its own checking to see if There's any changes to the last time it logging into the system
+    If there isn't, it will return a status quote of 304. Websites will load faster on second load.
+
+    => This is due to cache files being saved to be used in the long run
+
+    Facts: You can hard reload a site using ctrl f5 (or shift f5) to not use the cache in the system; or right click on the refresh icon (after turning on devtool)  
+
+Projects to do to strengthen your knowledge
+
+Sidenotes (in case you gotta search somewhere else to strengthen your intuition)
+How does it fit in the bigger picture?
