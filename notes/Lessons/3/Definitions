@@ -1,0 +1,45 @@
+Sources:
+What we cover in this lesson:
+Fleeting notes (raw notes):
+- Bình thường trong các công ty, người ta sẽ đi từ dev => next (để tester test) => production
+- connectionString được suggest nên để trong file .env
+- Sử dụng design pattern Singleton để thực hiện gọi hàm getInstance 1 lần, why? Các lần gọi
+tiếp theo sẽ chỉ vào instance hiện có => dành cho thiết kế gọi 1 lần như task manager của window (k mở 2 tabs đc)
+- modules.export chỉ export ra function cùng tên function trong file (ý là cùng format, tên function y hệt nhau, khác với export default)
+- Có nên đóng kết nối liên tục trong mongodb hay ko? Ko cần, do mongoose sử dụng Pool, đóng mở kết nối khi cần?
+
+- Một con server được connect được bao nhiêu? tùy thuộc cpu, memo. 
+- Nếu max thực là 100 connections, thì nên để maxConnection là 90 thôi, để có time còn update
+
+- Research on Poolsize
+- Poolsize > 50 for an instance, what will happen? mongoose will handle 50 first Connect. The 51th will wait
+till any Connnect set freed.
+
+Takeaways:
+1. require trong js được cache sau lần chạy đầu tiên. Trong Java và PHP thì ko cache, do vậy nên mỗi khi chạy một code 1 lần, thì sẽ tạo thêm một instance mới; dẫn đến việc thêm connection mới => dẫn đến connection overload 
+2. K nhúng trực tiếp số vào codes
+3. Bình thường trong các công ty, người ta sẽ đi từ dev => next (để tester test) => production
+4. Singleton design pattern là chỉ gọi 1 instance, các instance tiếp sau đó sẽ gọi đến instance vừa được gọi
+
+Important questions to ask yourself after
+- Điều đặc biệt của require trong js mà các phương thức tương tự của PHP và Java ko có?
+- Singleton là gì?
+
+Projects to do to strengthen your knowledge
+
+- Tìm hiểu lại về Pool của mongoose
+- Tại sao lại sử dụng maxpoolsize
+
+Sidenotes (in case you gotta search somewhere else to strengthen your intuition)
+
+- First bug due to mongodb doesnt connect (download mongodb and change localhost to 127.0.0.1)
+- https://stackoverflow.com/questions/46523321/mongoerror-connect-econnrefused-127-0-0-127017
+- People blamed it was node update
+- Gotta investigate after
+- https://superuser.com/questions/668004/why-is-my-localhost-not-127-0-0-1-but-1-and-what-notation-is-that#:~:text=The%20localhost%20%28loopback%29%20address%2C%200%3A0%3A0%3A0%3A0%3A0%3A0%3A1%2C%20and%20the%20IPv6,because%20multiple%20occurrences%20would%20create%20an%20ambiguous%20representation.
+- It turns out it is defaulted behavior that can be override
+- What did we learnt? Dont trust Stackoverflow 100%
+
+How does it fit in the bigger picture?
+
+

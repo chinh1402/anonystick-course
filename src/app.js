@@ -11,13 +11,14 @@ app.use(morgan("dev"))
 app.use(helmet())
 app.use(compression())
 // init db
-
+require("./db/init.mongodb")
+const {checkOverload} = require('./helpers/check.connect')
+checkOverload()
 // init routes
 app.get('/', ( req, res, next ) => {
     const strCompress = 'Hello Factipjs'
     return res.status(200).json({
         message: 'welcome',
-        metadata: strCompress.repeat(100002)
     })
 })
 // handling error

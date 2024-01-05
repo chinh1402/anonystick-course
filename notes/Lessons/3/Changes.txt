@@ -1,0 +1,9 @@
+Description: Không có nhiều changes lắm tại nói về các rules là chính
+Syntax wise:
+Folder created:
+- helpers
+Files created:
+- helpers/check.connect.js
+- db/init.mongodb.js
+- db/init.mongodb.lv0.js (lv X k viết)
+Notes:
