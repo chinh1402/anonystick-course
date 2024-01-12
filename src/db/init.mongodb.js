@@ -1,7 +1,11 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const connectString = 'mongodb://127.0.0.1:27017/shopDEV'
+const {db: {host, name, port}} = require('../configs/congif.mongdb')
+
+const connectString = `mongodb://${host}:${port}/${name}`
+
+console.log(connectString)
 
 const {countConnect} = require('../helpers/check.connect')
 

@@ -1,0 +1,15 @@
+Description:
+Syntax wise:
+    npm i dotenv 
+    $env:NODE_ENV: This to check the variable value
+
+    $env:NODE_ENV="pro"; node server.js (yes, this is a line)
+    Remove-Item -Path Env:\NODE_ENV (ON WINDOW): unset env var
+
+    // Can't find a way to only temporary pass in the variable NODE_ENV
+
+Folder created:
+Files created:
+    configs/congif.mongodb.js
+Notes:
+Codes (if needed):

@@ -1,0 +1,4 @@
+Những câu hỏi tồn đọng
+
+- Tìm hiểu lại về Pool của mongoose
+- Tại sao lại sử dụng maxpoolsize
