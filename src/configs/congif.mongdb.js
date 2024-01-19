@@ -37,8 +37,6 @@ const pro = {
         name: process.env.PRO_DB_NAME || 'shopPRO'
     }
 }
-
 const config = { dev, pro }
-
 const env = process.env.NODE_ENV || 'dev'
 module.exports = config[env]

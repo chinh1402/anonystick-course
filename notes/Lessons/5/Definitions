@@ -1,0 +1,23 @@
+Sources:
+What we cover in this lesson:
+Fleeting notes (raw notes):
+- password hash 10 => Taking a bit of our CPU memory, 10 is enough
+- Hacker khi hack duoc he thong thi se lay duoc public key, ma public key chi de dung de verify token. De hacker hack duoc thi phai co ca public key va private key
+- Javascript: thay vi code huong doi tuong nhu Java thi la huong module 
+Takeaways:
+1. I debugged a syntax bug for about 3 hours today, beware of the formatting in fucking http file... please... There must be a whitespace between header and object, and also there should not be a white space under the path
+2. 38:49
+3.
+Important questions to ask yourself after
+- What is mongoose model, schema, types?
+- Why v1 (v1/api/)?
+- Why expire of access token is 2 days while refresh token is 7 days
+
+Projects to do to strengthen your knowledge
+- Using each of those to actually understand what those are
+
+Sidenotes (in case you gotta search somewhere else to strengthen your intuition)
+How does it fit in the bigger picture?
+- Setting up sign up API
+
+Please, don't just notes everything in

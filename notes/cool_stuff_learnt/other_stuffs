@@ -1,0 +1,5 @@
+0. CMS server (controller model services design pattern)
+https://ryax.tech/design-pattern-what-is-it-and-why-use-it/
+
+1. Singleton pattern is also a design pattern
+2. Implementing RSA cryptographic (assume that you knew RSA, https://www.geeksforgeeks.org/rsa-algorithm-cryptography/), to handle Sign-in API security

@@ -1,0 +1,29 @@
+Description:
+Syntax wise:
+    npm i bcrypt
+    npm i jsonwebtoken
+    npm i lodash
+Folder created:
+    src/routes
+    src/routes/access
+    src/postman
+    src/auth
+Files created:
+    models/shop.model.js
+    routes/index.js
+    routes/access/index.js
+    controllers/access.controller.js
+    postman/access.post.http
+    routes/shop/index.js (empty file)
+    services/access.services.js
+    models/keytoken.model.js
+    services/keyToken.services.js
+    auth/authUtils.js
+    utils/index.js
+Notes:
+
+Installation:
+    Mongo Snippets for Node-js
+    REST Client
+
+Codes (if needed):

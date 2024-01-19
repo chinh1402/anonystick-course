@@ -1,4 +1,11 @@
 Những câu hỏi tồn đọng
 
 - Tìm hiểu lại về Pool của mongoose
-- Tại sao lại sử dụng maxpoolsize
+- Tại sao lại phải sử dụng maxpoolsize
+- How to run dependencies / dev dependencies
+- What is mongoose model, schema, types?
+- Why v1 (v1/api/)?
+
+- What's the different between ./ path and / path (relative path / absolute path)
+=> Bug happened because the path coming from localhost (root, '/') rather than from route folder (route, './')
+
